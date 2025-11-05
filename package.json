@@ -1,0 +1,29 @@
+{
+  "name": "okta-oidc-una",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "@okta/oidc-middleware": "0.0.6",
+    "consolidate": "^0.15.1",
+    "express": "^4.18.2",
+    "express-openid-connect": "^2.16.0",
+    "express-session": "^1.15.6",
+    "socket.io": "^1.7.4",
+    "swig": "^1.4.2"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "lint": "eslint \"**/*.js\" --ignore-pattern node_modules",
+    "build": "npm run lint",
+    "test:bdd": "cucumber-js",
+    "test": "npm run test:bdd"
+  },
+  "author": "UNA",
+  "license": "MIT",
+  "devDependencies": {
+    "@cucumber/cucumber": "^12.2.0",
+    "@eslint/js": "^9.38.0",
+    "eslint": "^9.38.0"
+  }
+}
